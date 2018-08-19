@@ -1,0 +1,193 @@
+/*FOOTER-------------------------------*/
+footer {
+  background: #495080;
+}
+
+.footer_wrapper {
+  font-size: 1.2em;
+  color: #fff;
+  padding: 70px 10px 0;
+}
+
+.footer_wrapper label {
+  font-size: .9em;
+  /* margin-left: 2px; */
+  display: block;
+  text-align: left;
+}
+
+.footer_wrapper > span {
+  text-transform: uppercase;
+}
+
+.column_left {
+  font-family: 'NunitoLight', sanserif;
+  font-size: 1.1rem;
+  text-align: left;
+  padding-left: 15px;
+}
+
+.column_left span {
+  display: block;
+}
+
+.mail, .phone {  
+  margin-bottom: 35px;
+}
+
+.contact {  
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+}
+
+.column_middle {
+  font-family: 'NunitoLight', sanserif;
+  padding-top: 50px; 
+  letter-spacing: 1px; 
+}
+
+.column_middle input { 
+  display: block;
+  height: 34px;
+  width: 100%;
+  border: none;
+  margin: 3px auto 20px;
+  border-radius: 0;
+ }
+
+ .column_middle > p {
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  text-align: left;
+  letter-spacing: 1px;
+ }
+
+.column_right { 
+  padding-top: 50px;
+  font-family: 'NunitoLight', sanserif;
+}
+
+.column_right textarea {
+  display: block;
+  height: 200px;
+  width: 100%;
+  border: none;
+  margin: 5px auto 0;
+  border-radius: 0;
+}
+
+.submit input {
+  border: 2px solid #fff;
+  width: 100%;
+  background: transparent;
+  margin: 16px auto 0; 
+  height: 50px;
+  display: block;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'NunitoRegular', sanserif;
+  font-size: 18px;
+}
+
+.submit input:hover {
+  background: rgba(0, 0, 0, .5);
+  /*border: none;*/ 
+}
+
+.bottom {
+  padding: 70px 0 90px;
+  font-size: .875rem;
+  text-align: center;
+}
+
+.left_bottom {
+  color: #9599a9;
+  text-transform: uppercase;
+}
+
+.right_bottom {
+  color: #9599a9;
+}
+
+/*MEDIAQUERIES*/
+@media screen and (min-width: 600px) {
+  .column_left, .column_middle > p {
+    text-align: left;
+  }
+
+  .column_middle {
+    padding-top: 0; 
+  }
+  
+
+}
+
+@media screen and (min-width: 768px) {
+  .footer_wrapper {
+    padding-top: 115px;
+  }
+
+  .mail, .phone {
+    margin-bottom: 15px;
+  }
+
+  .contact {
+    padding-bottom: 46px;
+  }
+
+  .phone {
+    margin-bottom: 20px;
+  }
+
+  .mail {
+    margin-bottom: 51px;
+  }
+
+  .column_middle {
+    padding-left: 83px;
+  }
+
+  .column_middle > p {
+    padding-bottom: 45px;
+  }
+
+  .column_right { 
+  padding: 71px 0 0 30px;
+  }
+
+  .bottom .col-4 {
+    padding-left: 0;
+  }
+
+  .left_bottom {
+    text-align: left;
+  }
+
+  .right_bottom {
+    text-align: right;
+  }
+
+  .footer_wrapper label {
+    text-align: left;
+  }
+  
+  .column_middle input {
+    width: 100%;
+    max-width: 280px;
+    display: inline-block;
+  }
+
+  .column_right textarea {
+    width: 100%;
+    height: 258px;
+    max-width: 420px;
+  }
+
+  .submit input {
+    width: 100%;
+    max-width: 420px;
+  }
+}

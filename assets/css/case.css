@@ -1,0 +1,199 @@
+@import url(fonts.css);
+@import url(base.css);
+@import url(nav.css);
+@import url(slanted.css);
+@import url(footer.css);
+
+/*BANNER--------------------------*/
+.banner {
+  background-image: url("../img/case_banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  width: 100%;
+  position: relative;
+  background-position: 0% 45%;
+  z-index: -2;  
+}
+
+/*CLIENTS*/
+.clients {
+  margin: 80px auto 50px;
+  position: relative;
+}
+
+#flight_hook,
+#collective_hook,
+#amage_hook {
+  position: relative;
+  bottom: 200px;
+}
+
+.clients h2 {
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+  font-family: 'NunitoRegular', sanserif;
+}
+
+.clients p {
+  margin-bottom: 40px;
+  line-height: 1.5;
+  font-size: 1.25rem;
+  font-family: 'NunitoLight', sanserif;
+}
+
+.clients .marg-15 {
+  margin-bottom: 15px;
+}
+
+.clients .marg-70 {
+  margin-bottom: 70px;
+}
+
+.clients a {
+  color: #d4b89c;
+  text-decoration: none;
+}
+
+.clients a:hover {
+  text-decoration: underline;
+}
+
+.clients .row {
+  margin-bottom: 70px;
+}
+
+.clients .no-after {
+  margin-bottom: 30px;
+}
+
+.computer-wrapper {
+ /* margin-top: 30px; */
+}
+
+.owl-carousel {
+  text-align: center;
+}
+
+.button_cases {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-family: "NunitoRegular", sanserif;
+  color: #d4b89c;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 1.1875rem;
+  border: 1px solid;
+  padding: 8px 30px;
+  font-family: 'NunitoRegular', sanserif;
+}
+
+.button_cases:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-prev,
+.owl-theme .owl-controls .owl-buttons .owl-next {
+  background: none;
+  margin: 0;
+  position: absolute;
+    bottom: 0;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-prev {
+  left: 0px;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-next{
+  right: 10px;
+}
+
+#ilumio .owl-controls .owl-buttons .owl-prev,
+#alpha  .owl-controls .owl-buttons .owl-prev {
+  left: -30px;
+}
+
+#ilumio .owl-controls .owl-buttons .owl-next,
+#alpha  .owl-controls .owl-buttons .owl-next {
+  right: -30px;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-prev .icon-chevron-left,
+.owl-theme .owl-controls .owl-buttons .owl-next .icon-chevron-right {
+  /*opacity: .4;*/
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-prev:hover,
+.owl-theme .owl-controls .owl-buttons .owl-next:hover {
+  /*background: #fff;*/
+  opacity: .1;
+}
+
+.icon-chevron-left,
+.icon-chevron-right {
+  height: 30px;
+  width: 30px;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media(min-width: 600px) {
+   .icon-chevron-left {
+  background: url(../svg/back.svg) no-repeat;
+}
+
+.icon-chevron-right {
+  background: url(../svg/next.svg) no-repeat;
+}
+
+
+  }
+@media(min-width: 600px) {
+  .banner {
+    height: 610px;
+  }
+
+  .clients .row:after {
+  content: "";
+  background: #e6f1f4;
+  width: 83%;
+  height: 2px;
+  transform: skewY(-3deg);
+  opacity: .7;
+  margin: 0 auto;
+  position: relative;
+  top: 25px;
+  }
+
+  .clients .no-after:after {
+  opacity: 0;
+  height: 0px;
+  }
+
+  /*.button_cases {
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+    margin: 0;
+  }*/
+
+  .clients .row {
+  margin-bottom: 170px;
+  }
+}

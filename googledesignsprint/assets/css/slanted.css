@@ -1,0 +1,81 @@
+.slanted {
+  background: #414b6d;
+  padding-bottom: 30px; 
+}
+
+.slanted h1 {
+  font-size: 3.3rem;
+  padding-top: 40px;
+ /* padding: 3% 0 10px 15%; */
+  color: #d6b088;
+}
+
+.slanted p {
+  display: inline-block;
+  padding: 15px 0 0 13%;
+  line-height: 1.4;
+  color: #dad4ce;
+  font-size: 1.1875rem;
+}
+
+.ornament {
+  display: none;
+}
+/*MEDIAQUERIES*/
+@media(min-width: 600px) {
+  .slanted {
+    height: 340px;
+  }
+}
+
+@media(min-width: 768px) {
+  .slanted {
+    height: 400px;
+    -webkit-clip-path: polygon(0% 0%, 76% 0px, 70% 98%, 0px 88%);
+    -ms-clip-path: polygon(0% 0%, 76% 0px, 70% 98%, 0px 88%);
+      clip-path: url("#clipPolygon");
+    -moz-clip-path: url("#clipPolygon");
+    -moz-clip-path: polygon(0% 0%, 76% 0px, 70% 98%, 0px 88%);
+  }
+
+  .slanted h1 {
+    font-size: 4rem;
+  }
+
+  .slanted p {
+    width: 85%;
+  }
+}
+
+@media(min-width: 1000px) {
+  .slanted {
+    height: 440px;
+  }
+
+  .slanted h1 {
+    font-size: 5.95rem;
+  }
+
+  .slanted p {
+    font-size: 1.2em;
+    width: 79%;
+    padding-left: 110px;
+  }
+
+ .ornament {
+  max-width: 40%;
+  height: 90%;
+  position: absolute;
+  right: 0;
+  bottom: 120px;
+  z-index: -1;
+  display: block;
+  }
+}
+
+@media(min-width: 1500px) {
+  .ornament {
+    max-width: 32%;
+    height: auto;
+  }
+}

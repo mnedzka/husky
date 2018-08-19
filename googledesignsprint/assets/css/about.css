@@ -1,0 +1,418 @@
+@import url(fonts.css);
+@import url(base.css);
+@import url(nav.css);
+@import url(slanted.css);
+@import url(footer.css);
+
+/*NAV FIX*/
+.current:before {
+  width: 80px;
+}
+
+/*BANNER--------------------------*/
+.banner {
+  background-image: url("../img/about_banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  width: 100%;
+  position: relative;
+  background-position: 0% 17%;
+  z-index: -2;  
+}
+
+.slanted {
+  background: #e3eff3;
+}
+
+.slanted h1 {
+  color: #414b6d;
+}
+
+.slanted p {
+  color: #414b6d;
+  width: 100%;
+}
+
+/*DESIGNERS---------------------------------*/
+.boss {
+  position: relative;
+  z-index: 10;
+}
+
+.main_boss {
+  margin: 30px auto 100px;
+  position: relative;
+  font-size: 1.1875rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.main_boss p.houschka,
+.main_boss p.light,
+.main_boss .light  {
+  font-size: 1.1870rem;
+  letter-spacing: .2px;
+  line-height: 1.6;
+}
+
+.main_boss p.emi {
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.main_boss:before {
+  content: "";
+  background-image: url(../img/emilia.png);
+  background-repeat: no-repeat;
+  width: 182px;
+  height: 182px;
+  display: block;
+  margin: 50px auto;
+}
+
+.main_boss:nth-child(3) {
+  margin: 40px 0;
+  background: red;
+}
+
+.list li {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.bullet_fix {
+  position: relative;
+}
+
+.list a,
+p.light a {
+  color: #000;
+}
+
+.main_boss .space {
+  margin-bottom: 30px;
+}
+
+.designers {
+  margin: 0 auto;
+  font-size: 1.1875rem;
+}
+
+.designers p {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.25rem;
+}
+
+p.caption {
+  font-weight: normal;
+  text-transform: none;
+  margin-bottom: 25px;
+  letter-spacing: normal;
+  font-size: 1rem;
+}
+
+.designers span {
+  width: 94%;
+  display: block;
+  margin: 10px auto 0;
+  word-break: break-word;
+  line-height: 1.5;
+}
+
+.designer_2{
+  margin: 90px 0;
+}
+
+.designer_1_photo, .designer_2_photo, .designer_3_photo {
+  width: 185px;
+  height: 185px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto 27px;
+  border-radius: 50%;
+}
+
+.designer_1_photo {
+  background-image: url("../img/joanna.png");
+}
+
+.designer_2_photo {
+  background-image: url("../img/lukasz.png");
+}
+
+.designer_3_photo {
+  background-image: url("../img/michalina.png");
+}
+
+.bottom_info {
+  width: auto;
+  margin: 70px auto 0;
+  color: #d4b89b;
+  font-size: 1.1875rem;
+  position: relative;
+}
+
+.bottom_info p {
+  line-height: 1.5;
+  margin-bottom: 70px;
+}
+
+.bottom_info .light a {
+  color: #d4b89b;
+}
+
+.bottom_info:before {
+  content: "";
+  background: url(../svg/partner.svg) no-repeat top left;
+  background-size: contain;
+  width: 130px;
+  height: 130px;
+  display: block;
+  margin: 0 auto;  
+}
+
+/*WORLD---------------------------------------*/
+ .world {
+  background-image: url("../img/crowd.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 750px;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+/*.world img {
+  max-height: 544px;
+}*/
+
+.headline {
+  text-align: center;
+  position: relative;
+  padding: 100px 0;
+  color: #fff;
+  font-family: 'NunitoRegular', sanserif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 1.3750rem;
+  z-index: 3;
+}
+
+.clients-list li {
+    font-size: 1.5rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+    font-family: 'NunitoRegular', sanserif;
+}
+
+/*OPINIONS*/
+.opinions {
+  margin-top: 150px;
+}
+
+.space_after {
+  position: relative;
+  margin-bottom: 15%;
+  z-index: 10;
+}
+
+.space {
+  position: relative;
+  margin-bottom: 10%;
+  z-index: 10;
+}
+
+.space_after p, .space p {
+  text-align: center;
+}
+
+.opinions h3 {
+  width: 90%;
+  color: #495080;
+  margin: 0 auto 55px;
+  font-size: 1.7em;
+  text-align: center;
+  line-height: 1.5;
+  font-family: 'NunitoLight', sanserif;
+}
+
+.ceo {
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  margin-bottom: 3px;
+  font-size: 1.1875rem;
+  font-family: "NunitoRegular", sanserif;
+}
+
+.ceo a {
+  color: #000;
+  text-decoration: none;
+}
+
+.ceo a:hover {
+  text-decoration: underline;
+}
+
+.ceo_img1, .ceo_img2 {
+  position: relative;
+}
+
+.ceo_img1:before,
+.ceo_img2:before,
+.ceo_img3:before {
+   content: "";
+   background-repeat: no-repeat;
+   background-size: contain;
+   width: 70px;
+   height: 70px;
+   display: block;
+   margin: 15px auto;
+}
+
+.ceo_img1:before{ 
+  background-image: url("../img/fredrik.png");  
+  left: 33%;
+  top: -40px;    
+}
+
+.ceo_img2:before{  
+  background-image: url("../img/dawid.png");
+  left: 26%;
+  top: -40px; 
+}
+
+.ceo_img3:before{
+  background-image: url("../img/michael.png");
+  left: 33%;
+  bottom: 0;
+}
+
+/*MEDIA QUERIES*/
+@media(min-width: 600px) {
+  .banner {
+    height: 622px;
+  }  
+
+  .main_boss {
+    width: 80%;
+  }
+
+  .designers span {
+    width: 80%;
+  }
+
+  .bottom_info {
+  width: 570px;
+  }
+
+  .opinions h3 {
+    width: 67%;
+  }
+}
+
+
+
+/*768px*/
+@media(min-width: 768px) {
+  .designer_2{
+    margin: 0;
+  }
+
+  .designers span {
+    width: 94%;
+  }  
+}
+
+
+
+
+/*1000px*/
+@media(min-width: 1000px) {
+  .main_boss {
+    width: 79%;
+    padding-left: 22%;
+    margin-bottom: 70px;
+  }
+
+  .main_boss:before {  
+    position: absolute;
+    top: -106px;
+    left: -6%;
+    margin: 0;
+  }
+
+  .bottom_info:before {
+    display: inline-block;
+    position: absolute;
+    left: -90px;
+    bottom: 5px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .map {
+  background-image: url("../svg/world.svg");
+/*  background-attachment: fixed;*/
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1000px; /*724px;*/
+  max-width: 100%;
+  position: relative;
+  /*top: 80px;*/
+  }
+
+  .ceo_img1:before,
+  .ceo_img2:before,
+  .ceo_img3:before {
+     position: absolute;
+  }
+
+  .space_after:after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: -70px;
+    left: 0px;
+    background: lightgray;
+    transform: skewY(-3deg);
+    opacity: .3;
+  }
+
+  .headline {
+    top: 70px;
+    padding: 0;
+  }
+
+  .clients-list li {
+    display: none; 
+  }
+
+}
+
+@media(min-width: 1200px) {
+   .list li {
+      white-space: nowrap;
+  }
+
+  .bullet_fix {
+    left: -20px;
+  }
+}
+
+@media(min-width: 1500px) {
+  .opinions {
+    margin-top: 440px;
+  }
+}
+
+

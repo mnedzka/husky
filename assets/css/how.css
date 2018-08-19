@@ -1,0 +1,208 @@
+@import url(fonts.css);
+@import url(base.css);
+@import url(nav.css);
+@import url(slanted.css);
+@import url(footer.css);
+
+/*NAV FIX*/
+.current:before {
+  width: 116px;
+}
+
+/*BANNER--------------------------*/
+.banner {
+  background-image: url("../img/how_banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  width: 100%;
+  position: relative;
+  background-position: 0% 47%;
+  z-index: -2;  
+}
+
+.slanted {
+  background: #d6b088;
+}
+
+.slanted h1 {
+  color: #fff6e9;
+}
+
+.slanted p {
+  color: #f5e6d3;
+}
+
+/*.ornament {
+  width: 38%;
+  height: 90%;
+  position: absolute;
+  right: 0;
+  bottom: 120px;
+  z-index: -1;
+}*/
+
+/*DESCRIPTION-------------------------------*/
+
+.description, .description_2 {
+  max-width: 625px;
+  margin: 35px auto 0;
+}
+
+.description p, .description_2 p {
+  display: inline-block;
+}
+
+.desc_header {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.desc_header p {
+  font-size: 1.875rem;
+}
+
+.desc_header img {
+  height: 90px;
+  position: relative;
+  top: 20px;
+  right: 5px;
+}
+
+.desc_info {
+  margin-bottom: 40px;
+}
+
+.desc_info p {
+  font-size: 1.1875rem;
+  line-height: 1.5;
+}
+
+.description_bottom {
+  margin: 70px 0;
+}
+
+.description_bottom p {
+  font-size: 1.1875rem;
+  display: block;
+  color: #d3b596;
+  line-height: 1.5;
+  position: relative;
+}
+
+.description_bottom a {
+  color: #d3b596;
+}
+
+.description_bottom img {
+    max-width: 130px;
+    display: block;
+    margin: 0 auto;
+}
+/*SECOND BANNER-------------------------------*/
+.second_banner {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 400px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("../img/pencils.jpg");
+}
+
+.second_banner p {
+  width: 100%;
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 1.1875rem;
+  text-shadow: 1px 1px #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.banner_wrapper {
+  padding-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider_button {
+  background: transparent;
+  width: 80%;
+  margin: 15px 0;
+  height: 62px;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider_button:hover {
+  background: rgba(0, 0, 0, .5);
+}
+
+.slider_button a {
+  font-size: 1.125em;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px 60px;
+  display: inline-block;
+  text-shadow: 1px 1px #000;
+}
+
+.first a,
+.middle a {
+  padding: 20px 92px;
+}
+
+/*MEDIA QUERIES*/
+@media(min-width: 600px) {
+  .description_bottom p {
+    left: -30px;
+  }
+
+  .description_bottom img  {
+  float: left;
+  max-width: 90px;
+  position: relative;
+  bottom: 20px;
+  left: -30px;
+  }
+
+  .banner {
+    height: 610px;
+  }
+
+  /* .desc_header p {
+    margin-left: -20px;
+  } */
+  
+
+  .slider_button {
+    width: 320px;
+  } 
+
+  .middle {
+  margin: 0 20px;
+  }
+}
+
+
+@media(min-width: 1000px) {
+     .banner_wrapper {
+    padding-top: 75px;
+  }
+
+  .second_banner {
+    height: 300px;
+  }
+}
