@@ -101,7 +101,6 @@ $(document).ready(function() {
 
         const fiveStepsBlocks = document.querySelectorAll('.js-block');
         const texts = document.querySelectorAll('.bottom_space');
-        console.log(texts)
         const slider = document.querySelector('.main_slider');
         // const block = document.querySelector('.js-block');
 
@@ -122,7 +121,7 @@ $(document).ready(function() {
                     removeActive(fiveStepsBlocks);
                     e.target.classList.add('five-step__block--active')
                     id = e.target.id
-                    console.log(id)
+                    // .log(id)console
                     // console.log(texts[0])
                     // texts[0].classList.add('test')
                     
